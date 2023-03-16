@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ProgramSate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Input jumlah sate ayam yang dibeli
+        System.out.print("Jumlah sate ayam yang dibeli: ");
+        int jumlahAyam = scanner.nextInt();
+        
+        // Input jumlah sate kambing yang dibeli
+        System.out.print("Jumlah sate kambing yang dibeli: ");
+        int jumlahKambing = scanner.nextInt();
+        
+        // Hitung harga total sate ayam dan kambing
+        int hargaAyam = jumlahAyam * 2000;
+        int hargaKambing = jumlahKambing * 3000;
+        int hargaTotal = hargaAyam + hargaKambing;
+        
+        // Tampilkan rincian pembelian sate
+        System.out.println("\n--- Rincian Pembelian Sate ---");
+        System.out.println("Jumlah sate ayam: " + jumlahAyam);
+        System.out.println("Jumlah sate kambing: " + jumlahKambing);
+        System.out.println("Harga sate ayam: Rp" + hargaAyam);
+        System.out.println("Harga sate kambing: Rp" + hargaKambing);
+        System.out.println("Total harga: Rp" + hargaTotal);
+    }
+}
